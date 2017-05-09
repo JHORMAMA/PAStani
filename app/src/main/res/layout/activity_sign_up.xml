@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pastani.rifqi.pastani.SignUpActivity">
+
+    <TextView
+        android:id ="@+id/UsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        tools:layout_editor_absoluteY="61dp"
+        tools:layout_editor_absoluteX="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:layout_alignBaseline="@+id/UsernameLabel"
+        android:layout_alignBottom="@+id/UsernameLabel"
+        android:layout_alignStart="@+id/Pass" />
+
+    <TextView
+        android:id ="@+id/PasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/UsernameLabel"
+        android:layout_alignStart="@+id/UsernameLabel" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:layout_alignBaseline="@+id/PasswordLabel"
+        android:layout_alignBottom="@+id/PasswordLabel"
+        android:layout_alignStart="@+id/ConfirmPass" />
+
+
+    <TextView
+        android:id ="@+id/ConfirmPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/Pass"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ConfirmPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:layout_alignBaseline="@+id/ConfirmPasswordLabel"
+        android:layout_alignBottom="@+id/ConfirmPasswordLabel"
+        android:layout_toEndOf="@+id/ConfirmPasswordLabel"
+        android:layout_marginStart="18dp" />
+
+
+    <TextView
+        android:id ="@+id/AdressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        tools:layout_editor_absoluteY="61dp"
+        tools:layout_editor_absoluteX="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/ConfirmPasswordLabel"
+        android:layout_alignStart="@+id/PasswordLabel" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text=""
+        android:layout_alignBaseline="@+id/AdressLabel"
+        android:layout_alignBottom="@+id/AdressLabel"
+        android:layout_alignStart="@+id/BankAccountNumber" />
+
+
+
+    <TextView
+        android:id ="@+id/BankAccountNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BRI Account Number"
+        tools:layout_editor_absoluteY="61dp"
+        tools:layout_editor_absoluteX="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/Address"
+        android:layout_alignStart="@+id/ConfirmPasswordLabel" />
+
+    <EditText
+        android:id="@+id/BankAccountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:layout_alignBaseline="@+id/BankAccountNumberLabel"
+        android:layout_alignBottom="@+id/BankAccountNumberLabel"
+        android:layout_alignStart="@+id/SignUpButton" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
