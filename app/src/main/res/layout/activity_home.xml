@@ -1,131 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.pastani.rifqi.pastani.HomeActivity">
 
-    <TextView
-        android:id ="@+id/UsernameLabel"
+    <Button
+        android:id="@+id/profile_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="username:"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_marginTop="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/AdressLabel" />
+        android:text="Profile"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteY="1dp"
+        tools:layout_editor_absoluteX="-2dp" />
 
-    <TextView
-        android:id ="@+id/UserIdLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User ID: "
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/UsernameLabel"
-        android:layout_alignStart="@+id/UsernameLabel" />
-
-    <TextView
-        android:id ="@+id/UserId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12345"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_above="@+id/AdressLabel"
-        android:layout_alignStart="@+id/Address" />
-
-    <TextView
-        android:id ="@+id/ProfileLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Profile"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_marginTop="13dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/UsernameLabel" />
-
-    <TextView
-        android:id ="@+id/Username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="farmer"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_alignBaseline="@+id/UsernameLabel"
-        android:layout_alignBottom="@+id/UsernameLabel"
-        android:layout_alignStart="@+id/UserId" />
-
-
-    <TextView
-        android:id ="@+id/AdressLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address:"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_below="@+id/UserIdLabel"
-        android:layout_alignStart="@+id/BankAccountNumberLabel"
-        android:layout_marginTop="23dp" />
-
-    <TextView
-        android:id ="@+id/Address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jl. pejompongan 3 no.66, cianjur, Jawa Barat"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_alignBaseline="@+id/AdressLabel"
-        android:layout_alignBottom="@+id/AdressLabel"
-        android:layout_alignStart="@+id/BankAccountNumber" />
-
-    <TextView
-        android:id ="@+id/BankAccountNumberLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BRI Account Number:"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_marginTop="22dp"
-        android:layout_below="@+id/Address"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="31dp" />
-
-    <TextView
-        android:id ="@+id/BankAccountNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12345678911"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_marginStart="14dp"
-        android:layout_alignBaseline="@+id/BankAccountNumberLabel"
-        android:layout_alignBottom="@+id/BankAccountNumberLabel"
-        android:layout_toEndOf="@+id/BankAccountNumberLabel" />
-
-    <TextView
-        android:id ="@+id/UserPointLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User Points:"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/BankAccountNumberLabel" />
-
-    <TextView
-        android:id ="@+id/UserPoint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        tools:layout_editor_absoluteY="61dp"
-        tools:layout_editor_absoluteX="50dp"
-        android:layout_alignBaseline="@+id/UserPointLabel"
-        android:layout_alignBottom="@+id/UserPointLabel"
-        android:layout_alignStart="@+id/BankAccountNumber" />
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

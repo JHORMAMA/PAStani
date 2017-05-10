@@ -16,7 +16,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="24dp" />
 
-    <EditText
+        <EditText
         android:id="@+id/User"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,4 +72,13 @@
         android:layout_marginTop="85dp"
         android:layout_below="@+id/LoginButton"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pastani_logo_transpa_dlZJa"
+        android:layout_below="@+id/Pass"
+        android:layout_alignEnd="@+id/LoginButton"
+        android:layout_marginTop="54dp" />
 </RelativeLayout>
