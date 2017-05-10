@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pastani.rifqi.pastani.SignInActivity">
+    tools:context="com.pastani.rifqi.pastani.SignInActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:alpha="0.20"
+        android:src="@drawable/pastani_logo_300x300" />
 
     <TextView
         android:id ="@+id/UsernameLabel"
@@ -50,10 +61,10 @@
         android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Pass"
         android:text="Login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="196dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/SignUpButton"
+        android:layout_marginBottom="109dp" />
 
     <TextView
         android:id ="@+id/SignUpLabel"
@@ -73,12 +84,4 @@
         android:layout_below="@+id/LoginButton"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/pastani_logo_transpa_dlZJa"
-        android:layout_below="@+id/Pass"
-        android:layout_alignEnd="@+id/LoginButton"
-        android:layout_marginTop="54dp" />
 </RelativeLayout>

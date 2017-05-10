@@ -24,7 +24,7 @@ public class SignInActivity extends AppCompatActivity {
             Log.d("Log", "Login correct");
             Toast.makeText(SignInActivity.this,"Username dan Password Benar",
                     Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(SignInActivity.this,ProfileActivity.class);
+            Intent intent = new Intent(SignInActivity.this,HomeActivity.class);
             startActivity(intent);
         }
         else
